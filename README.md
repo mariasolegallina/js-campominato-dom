@@ -16,11 +16,11 @@
                 - inserire in gridCell i numeri generati dal ciclo for
                 - inviare gli elementi della griglia al DOM (codice )
 
-    - nel campo ci sono 16 bombe:
+    - nel campo ci sono 16 mine:
         - generare 16 numeri random tra 1 e 100 (i numeri non devono ripetersi)
-        - associare i numeri generati al numero corrispondente all'interno della griglia (queste celle saranno le bombe)
-        - SE l'utente clicca su una bomba:
+        - associare i numeri generati al numero corrispondente all'interno della griglia (queste celle saranno le mine)
+        - SE l'utente clicca su una mina:
             - la cella si colora di rosso
             - la partita termina
-        ALTRIMENTI:
+        ALTRIMENTI SE l'utente clicca su una cella senza mina:
             la cella si colora di blu e il gioco presegue

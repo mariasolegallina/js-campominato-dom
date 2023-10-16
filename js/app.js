@@ -22,6 +22,29 @@ startBtnElement.addEventListener ('click', function (){
         gridDOMElement.innerHTML += gridCell
     }
 
-    
+    // numero di cella minimo e numero massimo
+    const minNum = 1
+    const maxNum = 100
+
+    // quantità di mine
+    const minesNum = 16
+
+    function getArrayOfNumIntInclusive (minNum, maxNum, minesNum) {
+        // array vuoto, da popolare con i 16 numeri random
+        const minesArray = []
+        console.log(minesArray)
+        
+        while (minesArray.length < minesNum) {
+            const n = getRandomIntInclusive (minNum, maxNum)
+            console.log(minesArray.includes(n))
+        } 
+    }
 
 })
+   
+// funzione per generare numeri random in un intervallo
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
