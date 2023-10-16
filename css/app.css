@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 25px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr) ;
+}
+
+.grid__cell {
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-blue {
+background-color: aquamarine;
+}
+
+.bg-red {
+background-color: tomato;
+}
