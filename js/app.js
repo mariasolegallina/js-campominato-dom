@@ -1,10 +1,10 @@
 console.log("campo minato")
 
 const startBtnElement = document.getElementById('start-btn')
-console.log(startBtnElement)
+// console.log(startBtnElement)
 
 const gridDOMElement = document.querySelector('.grid')
-console.log(gridDOMElement)
+// console.log(gridDOMElement)
 
 
 // cliccando il bottone compare una nuova griglia 
@@ -29,15 +29,18 @@ startBtnElement.addEventListener ('click', function (){
     // quantità di mine
     const minesNum = 16
 
-    function getArrayOfNumIntInclusive (minNum, maxNum, minesNum) {
+    function getArrayOfNumIntInclusive (theMinNum, theMaxNum, theMinesNum) {
         // array vuoto, da popolare con i 16 numeri random
         const minesArray = []
         console.log(minesArray)
         
         while (minesArray.length < minesNum) {
-            const n = getRandomIntInclusive (minNum, maxNum)
+            const n = getRandomIntInclusive (minNum, maxNum, minesNum)
             console.log(minesArray.includes(n))
-        } 
+            
+        } if (!minesArray.includes(n)) {
+            minesArray.push(n)
+        }
     }
 
 })
